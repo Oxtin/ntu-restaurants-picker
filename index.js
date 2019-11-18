@@ -11,7 +11,7 @@ app.use(methodOverride("_method"));
 app.use("/static", express.static('./static/'));
 
 // mongodb
-var url = 'mongodb+srv://Austin:Austin123@cluster0-cdzey.mongodb.net/NTU_restaurant?retryWrites=true&w=majority' || process.env.DATABASEURL;
+var url = process.env.DATABASEURL;
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true }, function(err) {
 	if (err) {
 		console.log("Fail to connect to the DB!");
