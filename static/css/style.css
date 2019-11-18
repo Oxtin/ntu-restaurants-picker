@@ -1,0 +1,31 @@
+@media (max-width: 1000px) {
+
+    .center-screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: center;
+        min-height: 80vh;
+    }
+
+    #picker {
+        width: 30.0rem;
+        height: 12.0rem;
+    }
+
+    #picker p {
+        text-align: center;
+        font-size: 5.0rem;
+    }
+
+    #name {
+        font-size: 15.0rem;
+    }
+
+    #position {
+        font-size: 5.0rem;
+    }
+
+}
